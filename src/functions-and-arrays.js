@@ -1,38 +1,115 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
 
+function maxOfTwoNumbers(a, b) {
+ if (a > b){
+  return a;
+} else {
+  return b;
+}
+}
 
 
 // Iteration #2: Find longest word
+
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord() {}
+function findLongestWord(words) {
+if (words.length === 0) return null
+  words.sort((a,b) => {
+    if(a.length > b.length) return -1
+    else if(b.length > a.length) return 1
+    return 0
+  })
+  return words[0]
+}
 
+console.log(findLongestWord(words))
 
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+function sumNumbers(numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+   sum += numbers[i]
+  } 
+  return sum
+  /*if (![]); 
+  return 0;*/
+  //need to return sum of array of numbers???
+
+}
 
 
 
+
+/**
+ * examples of inputs:
+ *  when array has all numbers
+ * [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+ * 
+ * when te array has all strings
+ * ["6", "12", "1"];
+ * 
+ * 
+ * * when te array has all strings & number mixed
+ * ["6", "12", "1", 16, 2, 1, 8, 10];
+ * 
+ * 
+ * when the array has booleans
+ * [true, false, true];
+ * 
+ * when the array has objects and arrays
+ * [{}, [], {}];
+ * 
+ */
 // Iteration #3.1 Bonus:
-function sum() {}
-
-
+function sum(values) {
+  let sum = 0;
+  for (let i = 0; i < values.length; i++) {
+    sum += values[i]
+  } 
+return sum
+}
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(numbersAvg) {
+  let sum = 0;
+  for (let i = 0; i < numbersAvg.length; i++) {
+   sum += numbersAvg[i]
+ 
+  } 
+  for (let i = 0; i == numbersAvg;) {
+    return null
+   } 
+
+  return sum / numbersAvg.length;
+  // last line of your function likely
+  // return sum / numbersAvg.length
+}
 
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength(wordsArr) {
+  let sum = 0;
+  for (let i = 0; i < wordsArr.averageWordLength; i++) {
+   sum += wordsArr[i]
+ 
+  } 
+  for (let i = 0; i == wordsArr;) {
+    return null
+   } 
+
+  return wordsArr.averageWordLength;
+  // last line of your function likely
+  // return sum / numbersAvg.length
+}
 
 // Bonus - Iteration #4.1
 function avg() {}
